@@ -50,7 +50,7 @@ const Cart = ({ id }) => {
         <div className='leading-loose'>
           <form
             className='max-w-xl m-4 p-10 bg-white rounded shadow-xl'
-            action='https://formspree.io/f/xjvjzgna'
+            action='https://formspree.io/f/xwkazleo'
             method='POST'
             enctype='multipart/form-data'
           >
