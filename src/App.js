@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 //pages
 import ProductsList from './components/ProductsList'
 import Product from './components/Product'
+import Cart from './components/Cart'
 //container
 import Layout from './components/Layout'
 
@@ -20,7 +21,7 @@ export default function App () {
           <Route
             path='/cart/:id'
             exact
-            render={props => <ProductsList id={props.match.params.id} />}
+            render={props => <Cart id={props.match.params.id} />}
           />
           <Route path='/'>
             <ProductsList page={1} />

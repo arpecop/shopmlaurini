@@ -32,7 +32,7 @@ const ProductsList = () => {
                 <img
                   src={
                     'https://strapi.rudixlab.com' +
-                    _product.image.formats.thumbnail.url
+                    _product.image.formats.medium.url
                   }
                   alt=''
                 />
