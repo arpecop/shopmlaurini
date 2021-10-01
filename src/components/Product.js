@@ -13,7 +13,7 @@ const Product = ({ id }) => {
       try {
         const response = await fetch(url)
         const json = await response.json()
-        console.log(json)
+
         setProduct(json)
       } catch (error) {
         console.log('error', error)
@@ -25,7 +25,11 @@ const Product = ({ id }) => {
   return (
     <div className='m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-8'>
       <div className='rounded-t-lg pt-2 pb-2 m-auto'>
-        <img alt='' src={'https://strapi.rudixlab.com' + product.image.url} />
+        <img
+          alt=''
+          src={'https://strapi.rudixlab.com' + product.image.url}
+          className='rounded-lg'
+        />
       </div>
       <div className='w-full p-5 flex flex-col justify-between'>
         <div>
