@@ -43,14 +43,14 @@ const Cart = ({ id }) => {
   }, [id])
   return (
     <div className='m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-8'>
-      <div className='rounded-t-lg pt-2 pb-2 m-auto'>
+      <div className='rounded-t-lg'>
         <img alt='' src={'https://strapi.rudixlab.com' + product.image.url} />
       </div>
-      <div className='w-full p-5 flex flex-col justify-between'>
+      <div className='w-full flex flex-col justify-between'>
         <div className='leading-loose'>
           <form
             className='max-w-xl m-4 p-10 bg-white rounded shadow-xl'
-            action='https://formspree.io/f/xwkazleo'
+            action='https://formspree.io/f/xjvjzgna'
             method='POST'
             enctype='multipart/form-data'
           >
