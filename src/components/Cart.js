@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import { NetlifyForm, Honeypot } from 'react-netlify-forms'
 const cats = [
   {
     key: 'varna',
@@ -2768,7 +2768,38 @@ const Cart = ({ id }) => {
 
     fetchData()
   }, [id])
-
+  const ContactForm = () => (
+    <NetlifyForm name='Contact' action='/thanks' honeypotName='bot-field'>
+      {({ handleChange, success, error }) => (
+        <>
+          <Honeypot />
+          {success && <p>Thanks for contacting us!</p>}
+          {error && (
+            <p>
+              Sorry, we could not reach our servers. Please try again later.
+            </p>
+          )}
+          <div>
+            <label htmlFor='name'>Name:</label>
+            <input type='text' name='name' id='name' onChange={handleChange} />
+          </div>
+          <div>
+            <label htmlFor='message'>Message:</label>
+            <textarea
+              type='text'
+              name='message'
+              id='message'
+              rows='4'
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <button type='submit'>Submit</button>
+          </div>
+        </>
+      )}
+    </NetlifyForm>
+  )
   return (
     <div className='m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-8'>
       <div className='rounded-t-lg'>
@@ -2780,10 +2811,13 @@ const Cart = ({ id }) => {
       </div>
       <div className='w-full flex flex-col justify-between'>
         <div className='leading-loose'>
+          <ContactForm></ContactForm>
           <form
             className='max-w-xl  p-5 bg-white rounded shadow-xl'
-            action='https://formspree.io/f/xjvjzgna'
+            //action='https://formspree.io/f/xjvjzgna'
+
             method='POST'
+            data-netlify='true'
           >
             <input
               className='w-full px-2 py-1 text-gray-700 bg-gray-200 rounded'
