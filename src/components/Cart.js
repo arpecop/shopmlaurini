@@ -27,7 +27,10 @@ const Cart = ({ id }) => {
       url: ''
     }
   })
-  //const handleSubmit = event => {event.preventDefault() console.log(event.target.elements.name.value)     }
+  const handleSubmit = event => {
+    event.preventDefault()
+    console.log(event.target.elements.name.value)
+  }
 
   const handleAddrTypeChange = e => {
     const filtered = counties.filter(c => c.key === e.target.value)

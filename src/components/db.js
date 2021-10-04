@@ -755,7 +755,16 @@ export const counties = [
       alt: 1063.9589161125282
     }
   },
-
+  {
+    key: 'kyustendil',
+    id: 'kyustendil',
+    value: {
+      id: 'kyustendil',
+      text: 'Кюстендил',
+      location: { lat: 42.2868817, lng: 22.6939308 },
+      alt: 959.6555670475864
+    }
+  },
   {
     key: 'kurdzhali',
     id: 'momchilgrad',
@@ -807,13 +816,13 @@ export const counties = [
     }
   },
   {
-    key: 'kyustendil',
-    id: 'kyustendil',
+    key: 'lovech',
+    id: 'lovech',
     value: {
-      id: 'kyustendil',
-      text: 'Кюстендил',
-      location: { lat: 42.2868817, lng: 22.6939308 },
-      alt: 959.6555670475864
+      id: 'lovech',
+      text: 'Ловеч',
+      location: { lat: 43.1369534, lng: 24.7141906 },
+      alt: 1066.094888230918
     }
   },
   {
@@ -856,16 +865,7 @@ export const counties = [
       alt: 1088.41499145
     }
   },
-  {
-    key: 'lovech',
-    id: 'lovech',
-    value: {
-      id: 'lovech',
-      text: 'Ловеч',
-      location: { lat: 43.1369534, lng: 24.7141906 },
-      alt: 1066.094888230918
-    }
-  },
+
   {
     key: 'lovech',
     id: 'lukovit',
@@ -904,6 +904,16 @@ export const counties = [
       text: 'Угърчин',
       location: { lat: 43.1062248, lng: 24.4126891 },
       alt: 1052.3388643171097
+    }
+  },
+  {
+    key: 'montana',
+    id: 'montana',
+    value: {
+      id: 'montana',
+      text: 'Монтана',
+      location: { lat: 43.4085161, lng: 23.2257292 },
+      alt: 1008.1944399124401
     }
   },
   {
@@ -966,16 +976,7 @@ export const counties = [
       alt: 1018.2534816377525
     }
   },
-  {
-    key: 'montana',
-    id: 'montana',
-    value: {
-      id: 'montana',
-      text: 'Монтана',
-      location: { lat: 43.4085161, lng: 23.2257292 },
-      alt: 1008.1944399124401
-    }
-  },
+
   {
     key: 'montana',
     id: 'vulchedrum',
@@ -984,6 +985,16 @@ export const counties = [
       text: 'Вълчедръм',
       location: { lat: 43.6949739, lng: 23.4427005 },
       alt: 1024.328186493017
+    }
+  },
+  {
+    key: 'pazardzhik',
+    id: 'pazardzhik',
+    value: {
+      id: 'pazardzhik',
+      text: 'Пазарджик',
+      location: { lat: 42.1927654, lng: 24.3335662 },
+      alt: 1026.7004500219693
     }
   },
   {
@@ -1046,16 +1057,7 @@ export const counties = [
       alt: 1027.9225343406279
     }
   },
-  {
-    key: 'pazardzhik',
-    id: 'pazardzhik',
-    value: {
-      id: 'pazardzhik',
-      text: 'Пазарджик',
-      location: { lat: 42.1927654, lng: 24.3335662 },
-      alt: 1026.7004500219693
-    }
-  },
+
   {
     key: 'pazardzhik',
     id: 'peshera',
@@ -1128,6 +1130,16 @@ export const counties = [
   },
   {
     key: 'pernik',
+    id: 'pernik',
+    value: {
+      id: 'pernik',
+      text: 'Перник',
+      location: { lat: 42.6051862, lng: 23.0378368 },
+      alt: 981.5313265092121
+    }
+  },
+  {
+    key: 'pernik',
     id: 'batanovci',
     value: {
       id: 'batanovci',
@@ -1146,16 +1158,7 @@ export const counties = [
       alt: 979.120189943442
     }
   },
-  {
-    key: 'pernik',
-    id: 'pernik',
-    value: {
-      id: 'pernik',
-      text: 'Перник',
-      location: { lat: 42.6051862, lng: 23.0378368 },
-      alt: 981.5313265092121
-    }
-  },
+
   {
     key: 'pernik',
     id: 'radomir',
@@ -1174,6 +1177,16 @@ export const counties = [
       text: 'Трън',
       location: { lat: 42.8343426, lng: 22.6503696 },
       alt: 970.213691463025
+    }
+  },
+  {
+    key: 'pleven',
+    id: 'pleven',
+    value: {
+      id: 'pleven',
+      text: 'Плевен',
+      location: { lat: 43.4170423, lng: 24.6066847 },
+      alt: 1068.3494704826628
     }
   },
   {
@@ -1286,16 +1299,7 @@ export const counties = [
       alt: 1087.9181488753452
     }
   },
-  {
-    key: 'pleven',
-    id: 'pleven',
-    value: {
-      id: 'pleven',
-      text: 'Плевен',
-      location: { lat: 43.4170423, lng: 24.6066847 },
-      alt: 1068.3494704826628
-    }
-  },
+
   {
     key: 'pleven',
     id: 'pordim',
@@ -1324,6 +1328,16 @@ export const counties = [
       text: 'Тръстеник',
       location: { lat: 43.52097200000001, lng: 24.4721915 },
       alt: 1065.0535610501381
+    }
+  },
+  {
+    key: 'plovdiv',
+    id: 'plovdiv',
+    value: {
+      id: 'plovdiv',
+      text: 'Пловдив',
+      location: { lat: 42.1354079, lng: 24.7452904 },
+      alt: 1042.652904607954
     }
   },
   {
@@ -1436,16 +1450,7 @@ export const counties = [
       alt: 1032.4259716414595
     }
   },
-  {
-    key: 'plovdiv',
-    id: 'plovdiv',
-    value: {
-      id: 'plovdiv',
-      text: 'Пловдив',
-      location: { lat: 42.1354079, lng: 24.7452904 },
-      alt: 1042.652904607954
-    }
-  },
+
   {
     key: 'plovdiv',
     id: 'purvomaj',
@@ -1484,6 +1489,16 @@ export const counties = [
       text: 'Сопот',
       location: { lat: 42.6538885, lng: 24.754802 },
       alt: 1055.8885643475771
+    }
+  },
+  {
+    key: 'razgrad',
+    id: 'razgrad',
+    value: {
+      id: 'razgrad',
+      text: 'Разград',
+      location: { lat: 43.53367189999999, lng: 26.5411165 },
+      alt: 1155.432257570676
     }
   },
   {
@@ -1537,6 +1552,16 @@ export const counties = [
     }
   },
   {
+    key: 'ruse',
+    id: 'ruse',
+    value: {
+      id: 'ruse',
+      text: 'Русе',
+      location: { lat: 43.83557130000001, lng: 25.9656554 },
+      alt: 1138.2193386379304
+    }
+  },
+  {
     key: 'razgrad',
     id: 'loznica',
     value: {
@@ -1546,16 +1571,7 @@ export const counties = [
       alt: 1154.039011961681
     }
   },
-  {
-    key: 'razgrad',
-    id: 'razgrad',
-    value: {
-      id: 'razgrad',
-      text: 'Разград',
-      location: { lat: 43.53367189999999, lng: 26.5411165 },
-      alt: 1155.432257570676
-    }
-  },
+
   {
     key: 'razgrad',
     id: 'zavet',
@@ -1616,16 +1632,7 @@ export const counties = [
       alt: 1144.781381516372
     }
   },
-  {
-    key: 'ruse',
-    id: 'ruse',
-    value: {
-      id: 'ruse',
-      text: 'Русе',
-      location: { lat: 43.83557130000001, lng: 25.9656554 },
-      alt: 1138.2193386379304
-    }
-  },
+
   {
     key: 'ruse',
     id: 'senovo',
@@ -1644,6 +1651,16 @@ export const counties = [
       text: 'Сливо поле',
       location: { lat: 43.943756, lng: 26.2045157 },
       alt: 1151.5248440189694
+    }
+  },
+  {
+    key: 'shumen',
+    id: 'shumen',
+    value: {
+      id: 'shumen',
+      text: 'Шумен',
+      location: { lat: 43.2712398, lng: 26.9361286 },
+      alt: 1165.5596799342381
     }
   },
   {
@@ -1696,16 +1713,7 @@ export const counties = [
       alt: 1176.232058826368
     }
   },
-  {
-    key: 'shumen',
-    id: 'shumen',
-    value: {
-      id: 'shumen',
-      text: 'Шумен',
-      location: { lat: 43.2712398, lng: 26.9361286 },
-      alt: 1165.5596799342381
-    }
-  },
+
   {
     key: 'shumen',
     id: 'smyadovo',
@@ -1738,6 +1746,16 @@ export const counties = [
   },
   {
     key: 'silistra',
+    id: 'silistra',
+    value: {
+      id: 'silistra',
+      text: 'Силистра',
+      location: { lat: 44.1147271, lng: 27.2671901 },
+      alt: 1202.884650045322
+    }
+  },
+  {
+    key: 'silistra',
     id: 'alfatar',
     value: {
       id: 'alfatar',
@@ -1766,16 +1784,7 @@ export const counties = [
       alt: 1178.327479275795
     }
   },
-  {
-    key: 'silistra',
-    id: 'silistra',
-    value: {
-      id: 'silistra',
-      text: 'Силистра',
-      location: { lat: 44.1147271, lng: 27.2671901 },
-      alt: 1202.884650045322
-    }
-  },
+
   {
     key: 'silistra',
     id: 'tutrakan',
@@ -1784,6 +1793,16 @@ export const counties = [
       text: 'Тутракан',
       location: { lat: 44.0386035, lng: 26.61951 },
       alt: 1172.2860462542849
+    }
+  },
+  {
+    key: 'sliven',
+    id: 'sliven',
+    value: {
+      id: 'sliven',
+      text: 'Сливен',
+      location: { lat: 42.6816536, lng: 26.3228685 },
+      alt: 1123.5035550753514
     }
   },
   {
@@ -1817,6 +1836,16 @@ export const counties = [
     }
   },
   {
+    key: 'smolyan',
+    id: 'smolyan',
+    value: {
+      id: 'smolyan',
+      text: 'Смолян',
+      location: { lat: 41.5774233, lng: 24.7011138 },
+      alt: 1027.0086644440717
+    }
+  },
+  {
     key: 'sliven',
     id: 'shivachevo',
     value: {
@@ -1826,16 +1855,7 @@ export const counties = [
       alt: 1111.149853129957
     }
   },
-  {
-    key: 'sliven',
-    id: 'sliven',
-    value: {
-      id: 'sliven',
-      text: 'Сливен',
-      location: { lat: 42.6816536, lng: 26.3228685 },
-      alt: 1123.5035550753514
-    }
-  },
+
   {
     key: 'sliven',
     id: 'tvurdica',
@@ -1906,16 +1926,7 @@ export const counties = [
       alt: 1030.8614544711156
     }
   },
-  {
-    key: 'smolyan',
-    id: 'smolyan',
-    value: {
-      id: 'smolyan',
-      text: 'Смолян',
-      location: { lat: 41.5774233, lng: 24.7011138 },
-      alt: 1027.0086644440717
-    }
-  },
+
   {
     key: 'smolyan',
     id: 'zlatograd',
@@ -2107,6 +2118,16 @@ export const counties = [
     }
   },
   {
+    key: 'stara-zagora',
+    id: 'stara-zagora',
+    value: {
+      id: 'stara-zagora',
+      text: 'Стара Загора',
+      location: { lat: 42.4257769, lng: 25.6344644 },
+      alt: 1087.5620675853925
+    }
+  },
+  {
     key: 'sofiya',
     id: 'slivnica',
     value: {
@@ -2238,13 +2259,13 @@ export const counties = [
     }
   },
   {
-    key: 'stara-zagora',
-    id: 'stara-zagora',
+    key: 'turgovishe',
+    id: 'turgovishe',
     value: {
-      id: 'stara-zagora',
-      text: 'Стара Загора',
-      location: { lat: 42.4257769, lng: 25.6344644 },
-      alt: 1087.5620675853925
+      id: 'turgovishe',
+      text: 'Търговище',
+      location: { lat: 43.2493556, lng: 26.5727357 },
+      alt: 1149.253695554115
     }
   },
   {
@@ -2287,16 +2308,7 @@ export const counties = [
       alt: 1136.907920354104
     }
   },
-  {
-    key: 'turgovishe',
-    id: 'turgovishe',
-    value: {
-      id: 'turgovishe',
-      text: 'Търговище',
-      location: { lat: 43.2493556, lng: 26.5727357 },
-      alt: 1149.253695554115
-    }
-  },
+
   {
     key: 'varna',
     id: 'varna',
@@ -2387,7 +2399,16 @@ export const counties = [
       alt: 1195.5702099598109
     }
   },
-
+  {
+    key: 'veliko-turnovo',
+    id: 'veliko-turnovo',
+    value: {
+      id: 'veliko-turnovo',
+      text: 'Велико Търново',
+      location: { lat: 43.0756739, lng: 25.6171514 },
+      alt: 1103.4760599533286
+    }
+  },
   {
     key: 'varna',
     id: 'vulchi-dol',
@@ -2519,13 +2540,13 @@ export const counties = [
     }
   },
   {
-    key: 'veliko-turnovo',
-    id: 'veliko-turnovo',
+    key: 'vidin',
+    id: 'vidin',
     value: {
-      id: 'veliko-turnovo',
-      text: 'Велико Търново',
-      location: { lat: 43.0756739, lng: 25.6171514 },
-      alt: 1103.4760599533286
+      id: 'vidin',
+      text: 'Видин',
+      location: { lat: 43.996159, lng: 22.8679302 },
+      alt: 1006.1010930801018
     }
   },
   {
@@ -2599,13 +2620,13 @@ export const counties = [
     }
   },
   {
-    key: 'vidin',
-    id: 'vidin',
+    key: 'vraca',
+    id: 'vraca',
     value: {
-      id: 'vidin',
-      text: 'Видин',
-      location: { lat: 43.996159, lng: 22.8679302 },
-      alt: 1006.1010930801018
+      id: 'vraca',
+      text: 'Враца',
+      location: { lat: 43.2102375, lng: 23.5528803 },
+      alt: 1017.7255515720713
     }
   },
   {
@@ -2679,13 +2700,13 @@ export const counties = [
     }
   },
   {
-    key: 'vraca',
-    id: 'vraca',
+    key: 'yambol',
+    id: 'yambol',
     value: {
-      id: 'vraca',
-      text: 'Враца',
-      location: { lat: 43.2102375, lng: 23.5528803 },
-      alt: 1017.7255515720713
+      id: 'yambol',
+      text: 'Ямбол',
+      location: { lat: 42.48419990000001, lng: 26.5035023 },
+      alt: 1125.98008976331
     }
   },
   {
@@ -2716,16 +2737,6 @@ export const counties = [
       text: 'Стралджа',
       location: { lat: 42.600227, lng: 26.6897128 },
       alt: 1136.9878238448055
-    }
-  },
-  {
-    key: 'yambol',
-    id: 'yambol',
-    value: {
-      id: 'yambol',
-      text: 'Ямбол',
-      location: { lat: 42.48419990000001, lng: 26.5035023 },
-      alt: 1125.98008976331
     }
   }
 ]

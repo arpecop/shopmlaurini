@@ -15,12 +15,10 @@ app.all('/', (req, res, next) => {
   sendEmailPromise
     .then(function (result) {
       console.log(result)
-      callback(null, response)
+      res.json(response)
     })
     .catch(function (err) {
-      console.log(err)
-      response.statusCode = 500
-      callback(null, response)
+      res.json(response)
     })
 })
 
