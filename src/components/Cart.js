@@ -29,15 +29,18 @@ const Cart = ({ id }) => {
   })
   //const handleSubmit = event => {event.preventDefault() console.log(event.target.elements.name.value)     }
 
-  const handleAddrTypeChange = e =>
-    setRegion(counties.filter(c => c.key === e.target.value))
+  const handleAddrTypeChange = e => {
+    const filtered = counties.filter(c => c.key === e.target.value)
+    console.log(filtered)
+    setRegion(filtered)
+  }
 
   useEffect(() => {
-    const url = 'https://strapi.rudixlab.com/products/' + id
-
     const fetchData = async () => {
       try {
-        const response = await fetch(url)
+        const response = await fetch(
+          'https://strapi.rudixlab.com/products/' + id
+        )
         const json = await response.json()
 
         setProduct(json)
@@ -151,7 +154,6 @@ const Cart = ({ id }) => {
                   id='dog-names'
                   className='w-full px-2 py-3 text-gray-700 bg-gray-200 rounded mt-1'
                 >
-                  <option value='rigatoni'>Населено Място</option>
                   {region.map(city => (
                     <option key={city.id} value={city.key}>
                       {city.value.text}

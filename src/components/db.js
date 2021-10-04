@@ -172,6 +172,16 @@ export const counties = [
   },
   {
     key: 'blagoevgrad',
+    id: 'blagoevgrad',
+    value: {
+      id: 'blagoevgrad',
+      text: 'Благоевград',
+      location: { lat: 42.0208569, lng: 23.0943385 },
+      alt: 970.4438933086606
+    }
+  },
+  {
+    key: 'blagoevgrad',
     id: 'bansko',
     value: {
       id: 'bansko',
@@ -190,16 +200,7 @@ export const counties = [
       alt: 988.327581991052
     }
   },
-  {
-    key: 'blagoevgrad',
-    id: 'blagoevgrad',
-    value: {
-      id: 'blagoevgrad',
-      text: 'Благоевград',
-      location: { lat: 42.0208569, lng: 23.0943385 },
-      alt: 970.4438933086606
-    }
-  },
+
   {
     key: 'blagoevgrad',
     id: 'dobrinishe',
@@ -268,6 +269,16 @@ export const counties = [
       text: 'Разлог',
       location: { lat: 41.8859984, lng: 23.4628413 },
       alt: 982.7645331512539
+    }
+  },
+  {
+    key: 'burgas',
+    id: 'burgas',
+    value: {
+      id: 'burgas',
+      text: 'Бургас',
+      location: { lat: 42.50479259999999, lng: 27.4626361 },
+      alt: 1167.2936516797727
     }
   },
   {
@@ -340,16 +351,7 @@ export const counties = [
       alt: 1163.85580975977
     }
   },
-  {
-    key: 'burgas',
-    id: 'burgas',
-    value: {
-      id: 'burgas',
-      text: 'Бургас',
-      location: { lat: 42.50479259999999, lng: 27.4626361 },
-      alt: 1167.2936516797727
-    }
-  },
+
   {
     key: 'burgas',
     id: 'carevo',
@@ -502,16 +504,6 @@ export const counties = [
   },
   {
     key: 'dobrich',
-    id: 'balchik',
-    value: {
-      id: 'balchik',
-      text: 'Балчик',
-      location: { lat: 43.4269047, lng: 28.1617188 },
-      alt: 1222.9762785157984
-    }
-  },
-  {
-    key: 'dobrich',
     id: 'dobrich',
     value: {
       id: 'dobrich',
@@ -520,6 +512,17 @@ export const counties = [
       alt: 1212.505816946954
     }
   },
+  {
+    key: 'dobrich',
+    id: 'balchik',
+    value: {
+      id: 'balchik',
+      text: 'Балчик',
+      location: { lat: 43.4269047, lng: 28.1617188 },
+      alt: 1222.9762785157984
+    }
+  },
+
   {
     key: 'dobrich',
     id: 'general-toshevo',
@@ -562,16 +565,6 @@ export const counties = [
   },
   {
     key: 'gabrovo',
-    id: 'dryanovo',
-    value: {
-      id: 'dryanovo',
-      text: 'Дряново',
-      location: { lat: 42.9774839, lng: 25.4781665 },
-      alt: 1094.9874905552695
-    }
-  },
-  {
-    key: 'gabrovo',
     id: 'gabrovo',
     value: {
       id: 'gabrovo',
@@ -580,6 +573,27 @@ export const counties = [
       alt: 1085.5188454466345
     }
   },
+  {
+    key: 'haskovo',
+    id: 'haskovo',
+    value: {
+      id: 'haskovo',
+      text: 'Хасково',
+      location: { lat: 41.9344366, lng: 25.5554462 },
+      alt: 1071.6532384586108
+    }
+  },
+  {
+    key: 'gabrovo',
+    id: 'dryanovo',
+    value: {
+      id: 'dryanovo',
+      text: 'Дряново',
+      location: { lat: 42.9774839, lng: 25.4781665 },
+      alt: 1094.9874905552695
+    }
+  },
+
   {
     key: 'gabrovo',
     id: 'plachkovci',
@@ -630,16 +644,7 @@ export const counties = [
       alt: 1086.1061341716727
     }
   },
-  {
-    key: 'haskovo',
-    id: 'haskovo',
-    value: {
-      id: 'haskovo',
-      text: 'Хасково',
-      location: { lat: 41.9344366, lng: 25.5554462 },
-      alt: 1071.6532384586108
-    }
-  },
+
   {
     key: 'haskovo',
     id: 'ivajlovgrad',
@@ -701,6 +706,16 @@ export const counties = [
     }
   },
   {
+    key: 'kurdzhali',
+    id: 'kurdzhali',
+    value: {
+      id: 'kurdzhali',
+      text: 'Кърджали',
+      location: { lat: 41.6338439, lng: 25.3777119 },
+      alt: 1056.5716957837726
+    }
+  },
+  {
     key: 'haskovo',
     id: 'topolovgrad',
     value: {
@@ -740,16 +755,7 @@ export const counties = [
       alt: 1063.9589161125282
     }
   },
-  {
-    key: 'kurdzhali',
-    id: 'kurdzhali',
-    value: {
-      id: 'kurdzhali',
-      text: 'Кърджали',
-      location: { lat: 41.6338439, lng: 25.3777119 },
-      alt: 1056.5716957837726
-    }
-  },
+
   {
     key: 'kurdzhali',
     id: 'momchilgrad',
@@ -2293,6 +2299,16 @@ export const counties = [
   },
   {
     key: 'varna',
+    id: 'varna',
+    value: {
+      id: 'varna',
+      text: 'Варна',
+      location: { lat: 43.2140504, lng: 27.9147333 },
+      alt: 1206.3086917287583
+    }
+  },
+  {
+    key: 'varna',
     id: 'aksakovo',
     value: {
       id: 'aksakovo',
@@ -2371,16 +2387,7 @@ export const counties = [
       alt: 1195.5702099598109
     }
   },
-  {
-    key: 'varna',
-    id: 'varna',
-    value: {
-      id: 'varna',
-      text: 'Варна',
-      location: { lat: 43.2140504, lng: 27.9147333 },
-      alt: 1206.3086917287583
-    }
-  },
+
   {
     key: 'varna',
     id: 'vulchi-dol',
