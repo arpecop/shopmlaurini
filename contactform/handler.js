@@ -1,25 +1,35 @@
 const serverless = require('serverless-http')
 const express = require('express')
+const cors = require('cors')
 const app = express()
 const AWS = require('aws-sdk')
-const sesClient = new AWS.SES()
-const sesConfirmedAddress = 'rudix.lab@gmail.com'
+AWS.config.update({
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  sessionToken: process.env.AWS_SESSION_TOKEN,
+  region: 'eu-central-1'
+})
+const ses = new AWS.SES({ region: 'eu-central-1' })
 
-app.all('/', (req, res, next) => {
-  res.json(req.body)
+app.use(cors())
+app.all('/', async (req, res, next) => {
+  var params = {
+    Destination: {
+      ToAddresses: ['rudix.lab@gmail.com']
+    },
+    Message: {
+      Body: {
+        Text: { Data: req.body.toString() }
+      },
+      Subject: { Data: 'Поръчка' }
+    },
+    Source: 'rudix.lab@gmail.com'
+  }
 
-  var emailObj = JSON.parse(req.body)
-  var params = getEmailMessage(emailObj)
-  var sendEmailPromise = sesClient.sendEmail(params).promise()
-
-  sendEmailPromise
-    .then(function (result) {
-      console.log(result)
-      res.json(response)
-    })
-    .catch(function (err) {
-      res.json(response)
-    })
+  ses.sendEmail(params, function (err, data) {
+    console.log(err, data)
+    res.json(err)
+  })
 })
 
 module.exports.handler = serverless(app)
