@@ -47,7 +47,7 @@ const ProductsList = () => {
             </div>
             <div className='pl-4 pr-4 pb-4 pt-4 rounded-lg'>
               <h4 className='mt-1 font-semibold text-base leading-tight truncate text-gray-700'>
-                <span style={{ textDecoration: 'line-through' }}>
+                <span className='text-xs text-gray-500 line-through'>
                   {roundTo(_product.price) + ' лв.'}
                 </span>{' '}
                 {roundTo((_product.price * (100 - _product.percent)) / 100)} лв.

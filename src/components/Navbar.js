@@ -3,7 +3,8 @@ import useToggle from '../hooks/toggle'
 
 const menu = [
   { item: 'Начало', href: '/' },
-  { item: 'За Нас', href: '/about' }
+  { item: 'За Нас', href: '/about' },
+  { item: 'Контакт', href: '/contact' }
 ]
 
 const Navbar = () => {

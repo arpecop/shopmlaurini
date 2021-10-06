@@ -6,6 +6,7 @@ import ProductsList from './components/ProductsList'
 import Product from './components/Product'
 import Cart from './components/Cart'
 import About from './components/About'
+import Contact from './components/Contact'
 //container
 import Layout from './components/Layout'
 
@@ -14,6 +15,7 @@ export default function App () {
     <Layout>
       <Router>
         <Switch>
+          <Route path='/contact' exact render={props => <Contact />} />
           <Route path='/about' exact render={props => <About />} />
           <Route
             path='/product/:id'
