@@ -23,6 +23,7 @@ const Cart = ({ id }) => {
         телефон: event.target.elements.tel.value,
         регион: event.target.elements.region.value,
         град: event.target.elements.city.value,
+        съобщение: event.target.elements.message.value,
         офис_еконт: event.target.elements.office_ekont.value,
         количество: event.target.elements.kolichestvo.value
       })
@@ -60,12 +61,22 @@ const Cart = ({ id }) => {
   }, [id])
 
   return (
-    <div className='m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-8'>
-      <div>
-        <div className='leading-loose'>
+    <>
+      <div className='m-2'>
+        <h1 className='text-5xl font-thin'>Поръчка</h1>
+      </div>
+      <div class='m-2 grid grid-cols-3 gap-4'>
+        <div>
+          <img
+            alt=''
+            src={'https://strapi.rudixlab.com' + product.image.url}
+            className='rounded-lg'
+          />
+        </div>
+        <div className='col-span-2'>
           {!complete ? (
             <form
-              className='max-w-xl  p-5 bg-white rounded shadow-xl'
+              className='p-5 bg-white rounded shadow-xl'
               //action='https://formspree.io/f/xjvjzgna'
               method='POST'
               onSubmit={handleSubmit}
@@ -174,11 +185,20 @@ const Cart = ({ id }) => {
               <div className='mt-2'>
                 <input
                   className='w-full px-2 py-2 text-gray-700 bg-gray-200 rounded'
-                  id='cus_email'
                   name='office_ekont'
                   type='text'
                   required=''
                   placeholder='Офис Еконт клон'
+                  aria-label='Email'
+                />
+              </div>
+              <div className='mt-2'>
+                <textarea
+                  className='w-full px-2 py-2 text-gray-700 bg-gray-200 rounded'
+                  name='message'
+                  type='text'
+                  required=''
+                  placeholder='Бележка'
                   aria-label='Email'
                 />
               </div>
@@ -221,14 +241,7 @@ const Cart = ({ id }) => {
           )}
         </div>
       </div>
-      <div className='w-full flex flex-col justify-between'>
-        <img
-          alt=''
-          src={'https://strapi.rudixlab.com' + product.image.url}
-          className='rounded-lg'
-        />
-      </div>
-    </div>
+    </>
   )
 }
 
