@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className='flex justify-between'>
           <div className='flex space-x-7'>
             <div>
-              <a href='#' className='flex items-center py-4 px-2'>
+              <a href='/' className='flex items-center py-4 px-2'>
                 <img src='/logo1.png' alt='Logo' className='h-8 w-8 mr-2' />
                 <span className='font-semibold text-green-500 text-lg'>
                   Melisa Laurini
