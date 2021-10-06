@@ -10,8 +10,16 @@ AWS.config.update({
   region: 'eu-central-1'
 })
 const ses = new AWS.SES({ region: 'eu-central-1' })
+const template = json => {
+  const arr = []
+  Object.entries(json).forEach(([key, value]) => {
+    arr.push(`<tr><td>${key}</td><td>${value}</td></tr>`)
+  })
+  return `<table>${arr.join('')}</table>`
+}
 
 app.use(cors())
+
 app.all('/', async (req, res, next) => {
   var params = {
     Destination: {
@@ -19,7 +27,7 @@ app.all('/', async (req, res, next) => {
     },
     Message: {
       Body: {
-        Text: { Data: req.body.toString() }
+        Html: { Data: template(JSON.parse(req.body.toString())) }
       },
       Subject: { Data: 'Поръчка' }
     },

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { roundTo } from './db'
 const Product = ({ id }) => {
   const [product, setProduct] = useState({
     image: {
@@ -34,7 +35,8 @@ const Product = ({ id }) => {
       <div className='w-full p-5 flex flex-col justify-between'>
         <div>
           <h4 className='mt-1 font-semibold text-lg leading-tight truncate text-gray-700'>
-            {product.title} - {product.price} лв.
+            {product.title} -{' '}
+            {roundTo((product.price * (100 - product.percent)) / 100)} лв.
           </h4>
           <div className='mt-1 text-gray-600'>{product.description}</div>
         </div>

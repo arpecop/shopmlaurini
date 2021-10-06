@@ -5,6 +5,7 @@ import axios from 'axios'
 const Cart = ({ id }) => {
   const [count, setCount] = useState(1)
   const [region, setRegion] = useState([])
+  const [firstName, setFirstname] = useState('')
   const [complete, setComplete] = useState(false)
   const [product, setProduct] = useState({
     image: {
@@ -13,16 +14,17 @@ const Cart = ({ id }) => {
   })
   const handleSubmit = event => {
     event.preventDefault()
+    setFirstname(event.target.elements.name.value)
     axios
       .post('https://jldjf9dwma.execute-api.eu-central-1.amazonaws.com/dev/', {
-        image: event.target.elements.image.value,
-        firstName: event.target.elements.name.value,
-        lastName: event.target.elements.family.value,
-        tel: event.target.elements.tel.value,
-        region: event.target.elements.region.value,
-        city: event.target.elements.city.value,
-        office_ekont: event.target.elements.office_ekont.value,
-        kolichestvo: event.target.elements.kolichestvo.value
+        картинка: event.target.elements.image.value,
+        име: event.target.elements.name.value,
+        фамилия: event.target.elements.family.value,
+        телефон: event.target.elements.tel.value,
+        регион: event.target.elements.region.value,
+        град: event.target.elements.city.value,
+        офис_еконт: event.target.elements.office_ekont.value,
+        количество: event.target.elements.kolichestvo.value
       })
       .then(function (response) {
         console.log(response.data)
@@ -193,7 +195,7 @@ const Cart = ({ id }) => {
                   className='px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded'
                   type='submit'
                 >
-                  {roundTo(count * product.price, 2)} лв.
+                  {roundTo((product.price * (100 - product.percent)) / 100)} лв.
                 </span>
                 {count >= 2 && (
                   <span
@@ -222,7 +224,7 @@ const Cart = ({ id }) => {
               </div>
             </form>
           ) : (
-            <h1>Благодарим Ви!</h1>
+            <h1>Благодарим Ви {firstName}! </h1>
           )}
         </div>
       </div>
