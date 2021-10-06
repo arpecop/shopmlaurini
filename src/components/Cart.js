@@ -61,14 +61,7 @@ const Cart = ({ id }) => {
 
   return (
     <div className='m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-8'>
-      <div className='rounded-t-lg'>
-        <img
-          alt=''
-          src={'https://strapi.rudixlab.com' + product.image.url}
-          className='rounded-lg'
-        />
-      </div>
-      <div className='w-full flex flex-col justify-between'>
+      <div>
         <div className='leading-loose'>
           {!complete ? (
             <form
@@ -227,6 +220,13 @@ const Cart = ({ id }) => {
             <h1>Благодарим Ви {firstName}! </h1>
           )}
         </div>
+      </div>
+      <div className='w-full flex flex-col justify-between'>
+        <img
+          alt=''
+          src={'https://strapi.rudixlab.com' + product.image.url}
+          className='rounded-lg'
+        />
       </div>
     </div>
   )
