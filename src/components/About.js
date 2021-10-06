@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div className='flex justify-between m-6'>
       <p className='text-xs font-semibold text-gray-600'>
-        <img src='/logo.png' />
+        <img src='/logo.png' alt='' />
         При нас, вие може да откриете, приятни аромати и атмосфера, много
         положителна енергия.Нашата работа се усъвършенства всеки ден с
         най-новите методи и технологии за успешно справяне с проблеми по

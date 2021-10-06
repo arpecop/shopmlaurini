@@ -59,38 +59,15 @@ const Navbar = () => {
 
       <div className={isOn ? 'mobile-menu' : 'hidden mobile-menu'}>
         <ul className=''>
-          <li className='active'>
+          {menu.map(item => (
             <a
-              href='index.html'
-              className='block text-sm px-2 py-4 text-white bg-green-500 font-semibold'
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href='#services'
+              key={item.item}
+              href={item.href}
               className='block text-sm px-2 py-4 hover:bg-green-500 transition duration-300'
             >
-              Services
+              {item.item}
             </a>
-          </li>
-          <li>
-            <a
-              href='#about'
-              className='block text-sm px-2 py-4 hover:bg-green-500 transition duration-300'
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href='#contact'
-              className='block text-sm px-2 py-4 hover:bg-green-500 transition duration-300'
-            >
-              Contact Us
-            </a>
-          </li>
+          ))}
         </ul>
       </div>
     </nav>
