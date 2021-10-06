@@ -10,14 +10,14 @@ const menu = [
 const Navbar = () => {
   const [isOn, toggleIsOn] = useToggle()
   return (
-    <nav className='bg-white shadow-lg'>
+    <nav className='bg-purple shadow-lg'>
       <div className='max-w-6xl mx-auto px-4'>
         <div className='flex justify-between'>
           <div className='flex space-x-7'>
             <div>
               <a href='/' className='flex items-center py-4 px-2'>
                 <img src='/logo1.png' alt='Logo' className='h-8 w-8 mr-2' />
-                <span className='font-semibold text-green-500 text-lg'>
+                <span className='font-semibold text-purple-500  text-lg'>
                   Melisa Laurini
                 </span>
               </a>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <a
                   key={item.item}
                   href={item.href}
-                  className='py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300'
+                  className='py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300'
                 >
                   {item.item}
                 </a>

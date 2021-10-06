@@ -31,7 +31,7 @@ const Cart = ({ id }) => {
       <div className='leading-loose'>
         {!complete ? (
           <form
-            className='max-w-xl  p-5 bg-white rounded shadow-xl'
+            className='m-5  p-5 bg-white rounded shadow-xl'
             //action='https://formspree.io/f/xjvjzgna'
             method='POST'
             onSubmit={handleSubmit}
