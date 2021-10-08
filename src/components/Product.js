@@ -26,7 +26,7 @@ const Product = ({ id }) => {
   return (
     <>
       <div className='m-2'>
-        <h1 className='text-5xl font-thin'>
+        <h1 className='text-5xl font-thin text-gray-700'>
           {product.title} -{' '}
           {roundTo((product.price * (100 - product.percent)) / 100)} лв.
         </h1>
