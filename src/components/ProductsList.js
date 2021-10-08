@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { roundTo } from './db'
+import { cats, roundTo } from './db'
 const ProductsList = () => {
   const [products, setProducts] = useState([])
 
@@ -22,10 +22,16 @@ const ProductsList = () => {
     <>
       <h1 className='text-4xl font-bold m-6 text-gray-700'>Добре Дошли!</h1>
       <div className='ml-6 mr-6 text-gray-700'>
+        <img
+          src='/model.jpg'
+          alt=''
+          className='rounded-lg mr-3 max-h-56 float-left'
+        />
         За да изглеждате уникално и запомнящо се във всяка ситуация, вече няма
         нужда да губите време в досадно търсене.
         <a href='/about'>Повече за нас</a>
       </div>
+      <div className='clear-both'></div>
       <h1 className='text-4xl font-bold m-6 text-gray-700'>Продукти</h1>
       <div className='m-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-8'>
         {products.map(_product => (
