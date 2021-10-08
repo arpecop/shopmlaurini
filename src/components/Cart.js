@@ -63,20 +63,19 @@ const Cart = ({ id }) => {
   return (
     <>
       <div className='m-2'>
+        <img
+          alt=''
+          src={'https://strapi.rudixlab.com' + product.image.url}
+          className='rounded-lg max-h-40 float-left m-4'
+        />
         <h1 className='text-5xl font-thin'>Пазарска Кошница</h1>
       </div>
-      <div class='m-2 grid grid-cols-3 gap-4'>
+      <div className='clear-both m-4'></div>
+      <div>
         <div>
-          <img
-            alt=''
-            src={'https://strapi.rudixlab.com' + product.image.url}
-            className='rounded-lg'
-          />
-        </div>
-        <div className='col-span-2'>
           {!complete ? (
             <form
-              className='p-5 bg-white rounded shadow-xl'
+              className='p-5 bg-white rounded shadow-xl m-4'
               //action='https://formspree.io/f/xjvjzgna'
               method='POST'
               onSubmit={handleSubmit}
