@@ -20,7 +20,7 @@ const ProductsList = () => {
   }, [])
   return (
     <>
-      <h1 className='text-4xl font-bold m-6 text-gray-700'>Добре Дошли!</h1>
+      <h1 className='text-4xl m-6 text-gray-700 font-thin'>Добре Дошли!</h1>
       <div className='ml-6 mr-6 text-gray-700'>
         <img
           src='/model.jpg'
@@ -32,7 +32,7 @@ const ProductsList = () => {
         <a href='/about'>Повече за нас</a>
       </div>
       <div className='clear-both'></div>
-      <h1 className='text-4xl font-bold m-6 text-gray-700'>Продукти</h1>
+      <h1 className='text-4xl  m-6 text-gray-700 font-thin'>Продукти</h1>
       <div className='m-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-8'>
         {products.map(_product => (
           <div
