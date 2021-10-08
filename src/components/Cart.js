@@ -62,15 +62,19 @@ const Cart = ({ id }) => {
 
   return (
     <>
-      <div className='m-2'>
+      <div className='bg-white rounded shadow-xl m-4 p-4'>
         <img
           alt=''
           src={'https://strapi.rudixlab.com' + product.image.url}
-          className='rounded-lg max-h-40 float-left m-4'
+          className='rounded-lg max-h-40 float-left mr-4'
         />
-        <h1 className='text-5xl font-thin'>Пазарска Кошница</h1>
+        <div className='w-full'>{product.title}</div>
+        <div>
+          {roundTo((product.price * (100 - product.percent)) / 100)} лв.
+        </div>
+        <div className='clear-both m-4'></div>
       </div>
-      <div className='clear-both m-4'></div>
+
       <div>
         <div>
           {!complete ? (
