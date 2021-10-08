@@ -70,7 +70,8 @@ const Cart = ({ id }) => {
         />
         <div className='w-full'>{product.title}</div>
         <div>
-          {roundTo((product.price * (100 - product.percent)) / 100)} лв.
+          {roundTo((product.price * (100 - product.percent)) / 100) * count},00
+          лв.
         </div>
         <div className='clear-both m-4'></div>
       </div>
@@ -211,7 +212,9 @@ const Cart = ({ id }) => {
                   className='px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded'
                   type='submit'
                 >
-                  {roundTo((product.price * (100 - product.percent)) / 100)} лв.
+                  {roundTo((product.price * (100 - product.percent)) / 100) *
+                    count}
+                  ,00 лв.
                 </span>
                 {count >= 2 && (
                   <span
