@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { cats, roundTo } from './db'
+import { roundTo } from './db'
 const ProductsList = () => {
   const [products, setProducts] = useState([])
 
